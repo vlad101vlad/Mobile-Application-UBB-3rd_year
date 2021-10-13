@@ -1,0 +1,23 @@
+<ion-list>
+  <ion-item button="true" (click)="expandDetail()">
+    <ion-label>
+      Some contest
+    </ion-label>
+  </ion-item>
+
+  <ion-item *ngIf="isExpanded">
+      <funfest-detail-tabs></funfest-detail-tabs>
+  </ion-item>
+
+</ion-list>
+
+
+<!--<ion-card>-->
+<!--  <ion-card-header>-->
+<!--    <funfest-detail-tabs></funfest-detail-tabs>-->
+<!--  </ion-card-header>-->
+
+<!--  <ion-card-content>-->
+<!--    some text-->
+<!--  </ion-card-content>-->
+<!--</ion-card>-->
