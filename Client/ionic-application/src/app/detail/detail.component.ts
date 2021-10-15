@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'funfest-detail',
+  selector: 'funfest-detail-item',
   templateUrl: './detail.component.html',
   styleUrls: ['./detail.component.scss'],
 })
