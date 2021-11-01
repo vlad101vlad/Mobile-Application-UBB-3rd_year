@@ -1,5 +1,5 @@
 <ng-container *ngFor="let contest of listOfContests">
-  <funfest-detail-item></funfest-detail-item>
+  <funfest-detail-item [contestDetail]="contest"></funfest-detail-item>
 </ng-container>
 
 <ng-container *ngIf="saveContestMode">

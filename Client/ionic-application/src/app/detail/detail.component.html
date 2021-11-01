@@ -1,6 +1,6 @@
 <ion-item button="true" (click)="expandDetail()">
   <ion-label>
-    Some contest
+    {{contestDetail.title}}
   </ion-label>
 
 </ion-item>
@@ -8,5 +8,5 @@
 
 <ng-container *ngIf="isExpanded">
   <funfest-detail-tabs></funfest-detail-tabs>
-  <funfest-detail-card></funfest-detail-card>
+  <funfest-detail-card [contest]="contestDetail"></funfest-detail-card>
 </ng-container>

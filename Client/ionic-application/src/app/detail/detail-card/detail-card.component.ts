@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Contest} from "../../shared/contest";
 
 @Component({
   selector: 'funfest-detail-card',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail-card.component.scss'],
 })
 export class DetailCardComponent implements OnInit {
+  @Input() contest: Contest;
 
   constructor() { }
 
