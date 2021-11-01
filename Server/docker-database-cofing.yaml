@@ -1,0 +1,15 @@
+version: "3"
+services:
+  local-database:
+    image: postgres
+    container_name: funfest-container
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: funfest-db
+    ports:
+      - 5432:5432
+    volumes:
+      - "db-data:/var/lib/postgresql/data"
+volumes:
+  db-data:

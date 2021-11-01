@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ContestServiceService} from '../service/contest-service.service';
+import {Contest} from '../shared/contest';
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
@@ -7,10 +9,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./master-view.component.scss'],
 })
 export class MasterViewComponent implements OnInit {
-  public contests: string[] = [`contest1`, `contest2`, `contest3`];
+  public listOfContests: Contest[];
 
-  constructor() { }
+  constructor(private contestService: ContestServiceService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.fetchData();
+  }
 
+  fetchData(): void {
+    this.contestService.getContests().subscribe(contestList => {
+      this.listOfContests = contestList;
+    });
+  }
 }
