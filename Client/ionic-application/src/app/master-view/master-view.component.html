@@ -1,6 +1,11 @@
-<ion-list>
-
-</ion-list>
 <ng-container *ngFor="let contest of listOfContests">
   <funfest-detail-item></funfest-detail-item>
 </ng-container>
+
+<ng-container *ngIf="saveContestMode">
+  <app-add-contest></app-add-contest>
+</ng-container>
+
+<section class="full-width">
+  <ion-button (click)="changeSaveContestModeStatus()" expand="full" color="secondary">Add contest</ion-button>
+</section>

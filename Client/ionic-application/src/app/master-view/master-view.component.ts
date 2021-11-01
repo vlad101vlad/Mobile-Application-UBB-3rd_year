@@ -10,6 +10,7 @@ import {Contest} from '../shared/contest';
 })
 export class MasterViewComponent implements OnInit {
   public listOfContests: Contest[];
+  public saveContestMode = false;
 
   constructor(private contestService: ContestServiceService) { }
 
@@ -21,5 +22,9 @@ export class MasterViewComponent implements OnInit {
     this.contestService.getContests().subscribe(contestList => {
       this.listOfContests = contestList;
     });
+  }
+
+  changeSaveContestModeStatus(){
+    this.saveContestMode = !this.saveContestMode;
   }
 }
