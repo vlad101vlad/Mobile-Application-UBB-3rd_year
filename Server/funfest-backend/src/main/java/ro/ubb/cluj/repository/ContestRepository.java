@@ -15,6 +15,9 @@ public class ContestRepository{
     }
 
     public Contest save(Contest contest){
+        long nextId = entities.size() + 1;
+        contest.setId(nextId);
+
         entities.add(contest);
         return contest;
     }
