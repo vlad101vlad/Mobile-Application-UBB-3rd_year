@@ -24,6 +24,10 @@ export class MasterViewComponent implements OnInit {
     });
   }
 
+  saveContest(contest: Contest): void{
+    console.log(contest);
+  }
+
   changeSaveContestModeStatus(){
     this.saveContestMode = !this.saveContestMode;
   }

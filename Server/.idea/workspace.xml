@@ -30,19 +30,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f45e37d2-7148-4cc3-bdc3-f2e97eb8edf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/shared/add-contest/add-contest.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/shared/add-contest/add-contest.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/shared/add-contest/add-contest.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/shared/add-contest/add-contest.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Default_Changelist1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_11_2021_10_06_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_11_2021_10_06__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_11_2021_10_07__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_11_2021_10_07__Default_Changelist_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_11_2021_10_11__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/detail/detail-card/detail-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/detail/detail-card/detail-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/detail/detail-card/detail-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/detail/detail-card/detail-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/detail/detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/detail/detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/shared/add-contest/add-contest.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/shared/add-contest/add-contest.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/shared/add-contest/add-contest.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/shared/add-contest/add-contest.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/shared/contest.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/shared/contest.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635688890363</updated>
       <workItem from="1635688891440" duration="2385000" />
+      <workItem from="1635754878263" duration="327000" />
     </task>
     <servers />
   </component>
@@ -122,7 +117,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

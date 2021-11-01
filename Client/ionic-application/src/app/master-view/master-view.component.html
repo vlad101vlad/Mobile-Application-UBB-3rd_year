@@ -3,7 +3,10 @@
 </ng-container>
 
 <ng-container *ngIf="saveContestMode">
-  <app-add-contest></app-add-contest>
+  <app-add-contest
+    (cancelAddMode)="changeSaveContestModeStatus()"
+    (saveContest)="saveContest($event)"
+  ></app-add-contest>
 </ng-container>
 
 <section class="full-width">
