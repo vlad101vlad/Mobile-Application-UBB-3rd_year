@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Contest} from "../shared/contest";
 
 @Component({
   selector: 'funfest-detail-item',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detail.component.scss'],
 })
 export class DetailComponent implements OnInit {
+  @Input() contestDetail: Contest;
+
+
   public isExpanded = false;
 
   constructor() { }

@@ -19,49 +19,44 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/lab1-develop" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f45e37d2-7148-4cc3-bdc3-f2e97eb8edf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-application/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-application/src/main/java/main/FunfestMainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-application/target/funfest-application-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-application/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-application/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-application/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-backend/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/controller/HelloWorldController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-web/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/docker-database-config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/src/main/java/en/ubb/info/funfest/FunfestApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/src/main/java/en/ubb/info/funfest/domain/Contest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/src/main/java/en/ubb/info/funfest/repository/ContestRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/src/main/java/en/ubb/info/funfest/service/ContestService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/src/main/java/en/ubb/info/funfest/service/impl/ContestServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest/src/test/java/en/ubb/info/funfest/FunfestApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/service/contest-service.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/service/contest-service.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/shared/contest.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-database-cofing.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-application/src/main/java/config/HttpResponseRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-backend/src/main/java/ro/ubb/cluj/domain/Contest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-backend/src/main/java/ro/ubb/cluj/repository/ContestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-backend/src/main/java/ro/ubb/cluj/service/ContestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-backend/src/main/java/ro/ubb/cluj/service/impl/ContestServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-backend/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-backend/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/controller/ContestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/controller/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/detail/detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/detail/detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funfest-application/src/main/java/main/FunfestMainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-application/src/main/java/main/FunfestMainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funfest-application/target/funfest-application-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-application/target/funfest-application-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funfest-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funfest-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +66,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="lab1-develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
@@ -92,6 +93,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -100,8 +102,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/funfest-application/src/main/docker" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Facultate\Anul III\Sem I\Mobile application\Mobile-Application-UBB-3rd_year\Server\funfest-application\src\main\docker" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Facultate\Anul III\Sem I\Mobile application\Mobile-Application-UBB-3rd_year\Server" />
+      <recent name="D:\Facultate\Anul III\Sem I\Mobile application\Mobile-Application-UBB-3rd_year\Server\funfest-application\src\main\docker" />
+      <recent name="D:\Facultate\Anul III\Sem I\Mobile application\Mobile-Application-UBB-3rd_year\Server\funfest-application" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.FunfestMainApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -113,22 +130,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunfestMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="FunfestMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="funfest-application" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="main.FunfestMainApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-database-cofing.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-database-cofing.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-database-cofing.yaml.local-database: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="local-database" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-database-cofing.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="funfest-application/src/main/docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="funfest-application/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="funfest-application/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.FunfestMainApplication" />
+        <item itemvalue="Docker.docker-database-cofing.yaml: Compose Deployment" />
+        <item itemvalue="Docker.docker: Compose Deployment" />
+        <item itemvalue="Docker.funfest-application/Dockerfile" />
+        <item itemvalue="Docker.docker-database-cofing.yaml.local-database: Compose Deployment" />
+        <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -140,8 +200,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635688890363</updated>
-      <workItem from="1635688891440" duration="2385000" />
+      <workItem from="1635688891440" duration="2958000" />
+      <workItem from="1635700141909" duration="2678000" />
+      <workItem from="1635708981882" duration="7837000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit backend structure working">
+      <created>1635698023856</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635698023856</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,52 +222,109 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/lab1-develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit backend structure working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit backend structure working" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1635713439598">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1635713439598" />
+    <state x="234" y="30" width="814" height="734" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1635714035150">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="234" y="30" width="814" height="734" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1635714035150" />
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1635716340345">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1635716340345" />
     <state x="291" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1635689926051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="291" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1635689926051" />
-    <state width="1493" height="283" key="GridCell.Tab.0.bottom" timestamp="1635689994160">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1635718535369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635689994160" />
-    <state width="1493" height="283" key="GridCell.Tab.0.center" timestamp="1635689994160">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1635718535369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635689994160" />
-    <state width="1493" height="283" key="GridCell.Tab.0.left" timestamp="1635689994160">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1635718535369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635689994160" />
-    <state width="1493" height="283" key="GridCell.Tab.0.right" timestamp="1635689994160">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1635718535369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635689994160" />
-    <state width="1493" height="283" key="GridCell.Tab.1.bottom" timestamp="1635689994160">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1635718535369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635689994160" />
-    <state width="1493" height="283" key="GridCell.Tab.1.center" timestamp="1635689994160">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1635718535369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1635689994160" />
-    <state width="1493" height="283" key="GridCell.Tab.1.left" timestamp="1635689994160">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1635718535369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1635689994160" />
-    <state width="1493" height="283" key="GridCell.Tab.1.right" timestamp="1635689994160">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1635718535369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1635689994160" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1635718535369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1635718535369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1635718535369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1635718535369">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1635718535369" />
+    <state x="299" y="70" key="Maven.ArtifactSearchDialog" timestamp="1635710458021">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1635710458021" />
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1635698124082">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1635698124082" />
     <state x="209" y="79" key="new project wizard" timestamp="1635697907958">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="79" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1635697907958" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1635714260008">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1635714260008" />
   </component>
 </project>
