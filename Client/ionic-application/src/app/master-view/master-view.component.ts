@@ -26,6 +26,9 @@ export class MasterViewComponent implements OnInit {
 
   saveContest(contest: Contest): void{
     console.log(contest);
+    this.contestService.addContest(contest).subscribe(
+      newContest => this.listOfContests.push(newContest)
+    );
   }
 
   changeSaveContestModeStatus(){

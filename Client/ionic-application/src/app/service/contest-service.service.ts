@@ -26,5 +26,11 @@ export class ContestServiceService {
     return this.httpClient.get<Contest[]>(this.backendUrl + '/', this.requestOptions);
   }
 
+  addContest(newContest: Contest): Observable<Contest>{
+    return this.httpClient.post<Contest>(
+      this.backendUrl + '/add', newContest, this.requestOptions
+    );
+  }
+
 
 }
