@@ -1,14 +1,12 @@
 package ro.ubb.cluj.domain;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "Contest")
 public class ContestJPA {
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Id
     private Long id;
 
