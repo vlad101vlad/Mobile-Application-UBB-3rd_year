@@ -1,7 +1,6 @@
 package ro.ubb.cluj.service.impl;
 
 import org.springframework.stereotype.Service;
-import ro.ubb.cluj.domain.Contest;
 import ro.ubb.cluj.domain.ContestJPA;
 import ro.ubb.cluj.repository.ContestJPARepository;
 import ro.ubb.cluj.service.ContestService;
@@ -20,11 +19,6 @@ public class ContestServiceJPAImpl implements ContestService {
     @Override
     public ContestJPA save(ContestJPA contest) {
         return contestJPARepository.save(contest);
-    }
-
-    @Override
-    public Contest removeContest(long contestId) {
-        return null;
     }
 
     @Override
