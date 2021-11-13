@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="PostgreSQL - blogapp-db@localhost" uuid="e1177a71-cc84-497b-872b-f7107e9a4ed4">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <schema-control>MANUAL</schema-control>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/blogapp-db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="MySQL - funfest@localhost" uuid="03449c8f-8036-4977-9840-3bbe8bc85743">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:8080/funfest</jdbc-url>
+    </data-source>
+  </component>
+</project>

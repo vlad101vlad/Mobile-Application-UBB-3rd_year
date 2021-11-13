@@ -1,29 +1,35 @@
 package ro.ubb.cluj.domain;
 
 
-import java.io.Serializable;
+import javax.persistence.*;
 
-public class Contest implements Serializable {
-    private long id;
+@Entity
+@Table(name = "Contest")
+public class ContestJPA {
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    private Long id;
 
+    @Column(nullable = false)
     private String title;
+
+    @Column(nullable = false)
     private String description;
 
-    public Contest(long id, String title, String description) {
+    public ContestJPA() {
+    }
+
+    public ContestJPA(Long id, String title, String description) {
         this.id = id;
         this.title = title;
         this.description = description;
     }
 
-    public Contest() {
-
-    }
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -45,7 +51,7 @@ public class Contest implements Serializable {
 
     @Override
     public String toString() {
-        return "Contest{" +
+        return "ContestJPA{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +

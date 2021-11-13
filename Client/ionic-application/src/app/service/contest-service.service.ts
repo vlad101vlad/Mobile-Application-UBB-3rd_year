@@ -8,7 +8,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 })
 export class ContestServiceService {
 
-  private backendUrl = 'http://localhost:8080/contest';
+  private backendUrl = 'http://localhost:8443/contest';
   private headerDict = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
