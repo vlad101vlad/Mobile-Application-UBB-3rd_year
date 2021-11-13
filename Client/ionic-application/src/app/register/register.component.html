@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Register
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <form>
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item>
+            <ion-input placeholder="Email" name="username" id="usernameField"
+                       #email></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder="Password" name="password" id="passwordField"
+            #password></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder="Repeat password" name="repassword" id="rePasswordField"
+                       #repassword></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block">Create account</ion-button>
+        <ion-button (click)="goToLogin()" expand="block">Back to LOGIN</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

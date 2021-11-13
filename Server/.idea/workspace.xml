@@ -30,8 +30,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f45e37d2-7148-4cc3-bdc3-f2e97eb8edf5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/service/contest-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/service/contest-service.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/Mobile-Application-UBB-3rd_year.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/.idea/Client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/login/login.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/login/login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/register/register.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/register/register.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/register/register.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_11_2021_10_06_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_11_2021_10_06__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_11_2021_10_07__Default_Changelist_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_11_2021_10_11__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +90,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Client" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="FunfestMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -100,7 +124,10 @@
       <option name="presentableId" value="Default" />
       <updated>1635688890363</updated>
       <workItem from="1635688891440" duration="2385000" />
-      <workItem from="1635754878263" duration="953000" />
+      <workItem from="1635754878263" duration="7047000" />
+      <workItem from="1635795311701" duration="11000" />
+      <workItem from="1635795341987" duration="103000" />
+      <workItem from="1636799835801" duration="3336000" />
     </task>
     <task id="LOCAL-00001" summary="Contest to be saved is transmited to master component">
       <created>1635755448133</created>
@@ -116,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635755527016</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add feature fully working">
+      <created>1635756044308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635756044308</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,63 +183,77 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Contest to be saved is transmited to master component" />
     <MESSAGE value="Created the backend url for saving contest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the backend url for saving contest" />
+    <MESSAGE value="Add feature fully working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add feature fully working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="291" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1635689926051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="291" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1635689926051" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1635755776037">
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1636799841901">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635755776037" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1635755776037">
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636799841901" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1635775023366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635755776037" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1635755776036">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635775023366" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1635775023366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635755776036" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1635755776037">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635775023366" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1635775023366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635755776037" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1635755792296">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635775023366" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1635775023366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635755792296" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1635755792296">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635775023366" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1635775023366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1635755792296" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1635755792296">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635775023366" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1635775023366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1635755792296" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1635755792296">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1635775023366" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1635775023366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1635755792296" />
-    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1635755528349">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1635775023366" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1635775023366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1635755528349" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1635775023366" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1635775023367">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635775023367" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1635775023366">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1635775023366" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1635775023366">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1635775023366" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1635775023366">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1635775023366" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1635756632991">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1635756632991" />
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1635756045497">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1635756045497" />
     <state x="209" y="79" key="new project wizard" timestamp="1635697907958">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="209" y="79" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1635697907958" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/funfest-application/src/main/java/config/HttpResponseRequestFilter.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
