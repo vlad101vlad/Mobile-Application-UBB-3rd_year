@@ -11,15 +11,15 @@
       <ion-col>
         <ion-list inset>
           <ion-item>
-            <ion-input placeholder="Email" name="username" id="usernameField"
+            <ion-input placeholder="Username" name="username" id="usernameField"
                        #email></ion-input>
           </ion-item>
           <ion-item>
-            <ion-input placeholder="Password" name="password" id="passwordField"
+            <ion-input type="password" placeholder="Password" name="password" id="passwordField"
             #password></ion-input>
           </ion-item>
           <ion-item>
-            <ion-input placeholder="Repeat password" name="repassword" id="rePasswordField"
+            <ion-input type="password" placeholder="Repeat password" name="repassword" id="rePasswordField"
                        #repassword></ion-input>
           </ion-item>
         </ion-list>
@@ -27,7 +27,19 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button expand="block">Create account</ion-button>
+        <ng-container *ngIf="doPasswordMatch(password.value, repassword.value) else disableRegister">
+          <ion-button
+            [disabled]="password.textContent!=repassword.textContent"
+            (click)="register(email.value, password.value)"
+            expand="block">Create account</ion-button>
+        </ng-container>
+
+        <ng-template #disableRegister>
+          <ion-button
+            [disabled]="true"
+            expand="block">Create account</ion-button>
+        </ng-template>
+
         <ion-button (click)="goToLogin()" expand="block">Back to LOGIN</ion-button>
       </ion-col>
     </ion-row>

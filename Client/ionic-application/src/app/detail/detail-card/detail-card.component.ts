@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Contest} from "../../shared/contest";
+import {Contest} from "../../shared/model/contest";
 
 @Component({
   selector: 'funfest-detail-card',
