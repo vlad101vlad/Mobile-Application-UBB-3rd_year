@@ -3,6 +3,7 @@ package ro.ubb.cluj.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import ro.ubb.cluj.domain.Contest;
+import ro.ubb.cluj.domain.ContestJPA;
 import ro.ubb.cluj.service.ContestService;
 
 
@@ -19,12 +20,12 @@ public class ContestController {
     }
 
     @GetMapping("/")
-    List<Contest> getContests(){
+    List<ContestJPA> getContests(){
         return contestService.getAll();
     }
 
     @PostMapping("/add")
-    Contest addContest(@RequestBody Contest contest){
+    ContestJPA addContest(@RequestBody ContestJPA contest){
         return contestService.save(contest);
     }
 }

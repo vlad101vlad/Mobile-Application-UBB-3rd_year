@@ -23,6 +23,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+
         <dependency>
             <groupId>ro.ubb.cluj</groupId>
             <artifactId>funfest-web</artifactId>
