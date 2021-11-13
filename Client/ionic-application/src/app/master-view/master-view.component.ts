@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ContestServiceService} from '../service/contest-service.service';
-import {Contest} from '../shared/contest';
+import {Contest} from '../shared/model/contest';
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector

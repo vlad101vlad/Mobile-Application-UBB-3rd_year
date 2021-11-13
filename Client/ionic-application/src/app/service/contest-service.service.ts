@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Contest} from '../shared/contest';
+import {Contest} from '../shared/model/contest';
 import {Observable} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 

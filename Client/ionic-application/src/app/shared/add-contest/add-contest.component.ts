@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {Contest} from "../contest";
+import {Contest} from "../model/contest";
 
 @Component({
   selector: 'app-add-contest',
