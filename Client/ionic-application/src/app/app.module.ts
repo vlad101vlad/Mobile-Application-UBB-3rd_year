@@ -15,10 +15,11 @@ import {ContestServiceService} from './service/contest-service.service';
 import {HttpClientModule} from '@angular/common/http';
 import {AddContestComponent} from "./shared/add-contest/add-contest.component";
 import {LoginComponent} from "./login/login.component";
+import {RegisterComponent} from "./register/register.component";
 
 
 @NgModule({
-    declarations: [AppComponent, MasterViewComponent, HeaderComponent, DetailComponent, DetailTabsComponent, DetailCardComponent, AddContestComponent, LoginComponent],
+    declarations: [AppComponent, MasterViewComponent, HeaderComponent, DetailComponent, DetailTabsComponent, DetailCardComponent, AddContestComponent, LoginComponent, RegisterComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, ContestServiceService  ],
