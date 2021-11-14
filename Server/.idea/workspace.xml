@@ -29,24 +29,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f45e37d2-7148-4cc3-bdc3-f2e97eb8edf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/config/SecurityConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/config/services/MyUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/config/utils/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/dto/AuthRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/dto/AuthResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/config/JwtRequestFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-application/target/funfest-application-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-application/target/funfest-application-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-application/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-application/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-backend/src/main/java/ro/ubb/cluj/repository/UserJPARepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-backend/src/main/java/ro/ubb/cluj/repository/UserJPARepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-backend/src/main/java/ro/ubb/cluj/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-backend/src/main/java/ro/ubb/cluj/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-backend/src/main/java/ro/ubb/cluj/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-backend/src/main/java/ro/ubb/cluj/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-backend/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/controller/AuthentificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/controller/AuthentificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/config/SecurityConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/config/SecurityConfigurer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="jpa-persistance" />
+        <entry key="$PROJECT_DIR$/.." value="register-user" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -97,6 +82,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -105,6 +91,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.FunfestMainApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FunfestMainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="funfest-application" />
       <extension name="coverage">
@@ -160,7 +159,7 @@
       <workItem from="1635795311701" duration="11000" />
       <workItem from="1635795341987" duration="103000" />
       <workItem from="1636799835801" duration="22660000" />
-      <workItem from="1636878265829" duration="1870000" />
+      <workItem from="1636878265829" duration="5183000" />
     </task>
     <task id="LOCAL-00001" summary="Contest to be saved is transmited to master component">
       <created>1635755448133</created>
@@ -211,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636830455057</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Auth controller returns JWT key when receives authRequest">
+      <created>1636880430345</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1636880430345</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +255,8 @@
     <MESSAGE value="Refactored code" />
     <MESSAGE value="Fixed contest auto generation on primary key" />
     <MESSAGE value="Created register logic in the backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created register logic in the backend" />
+    <MESSAGE value="Auth controller returns JWT key when receives authRequest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auth controller returns JWT key when receives authRequest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="668" y="302" key="#Assign_Data_Sources" timestamp="1636819007432">
@@ -264,14 +271,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1636825438215" />
-    <state x="183" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636825528786">
+    <state x="183" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1636885122342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="183" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1636825528786" />
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1636879994719">
+    <state x="183" y="77" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1636885122342" />
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1636884217410">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1636879994719" />
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1636884217410" />
     <state x="449" y="151" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1636813878431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -284,66 +291,66 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636799841901" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1636880230764">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1636886692028">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636880230763" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1636880230763">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636886692028" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1636886692028">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636880230763" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1636880230763">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636886692028" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1636886692028">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636880230763" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1636880230763">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636886692028" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1636886692028">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636880230763" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1636880249198">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636886692028" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1636886692029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636880249198" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1636880249198">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636886692029" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1636886692029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1636880249198" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1636880249197">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1636886692029" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1636886692028">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1636880249197" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1636880249198">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1636886692028" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1636886692029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1636880249198" />
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1636880230464">
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1636886692029" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1636886692029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636880230464" />
-    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1636880230463">
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636886692029" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1636886692029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1636880230463" />
-    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1636880230463">
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1636886692029" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1636886692029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1636880230463" />
-    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1636880230464">
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1636886692029" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1636886692029">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1636880230464" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1636886692029" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1636812957482">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1636812957482" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1635756632991">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1636886313120">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1635756632991" />
-    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1636830457937">
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1636886313120" />
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2" timestamp="1636880434812">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636830457937" />
+    <state x="361" y="136" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636880434812" />
     <state x="670" y="297" width="196" height="251" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1636820343579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -360,5 +367,16 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1636838627905" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/funfest-web/src/main/java/ro/ubb/cluj/config/JwtRequestFilter.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
