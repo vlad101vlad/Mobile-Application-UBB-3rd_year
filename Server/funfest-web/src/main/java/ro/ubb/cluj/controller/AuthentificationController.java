@@ -14,6 +14,7 @@ import ro.ubb.cluj.dto.AuthRequestDTO;
 import ro.ubb.cluj.dto.AuthResponseDTO;
 import ro.ubb.cluj.service.UserService;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/auth")
 public class AuthentificationController {
@@ -38,7 +39,7 @@ public class AuthentificationController {
     }
 
 
-    @GetMapping("/login")
+    @PostMapping("/login")
     public AuthResponseDTO authenticate(@RequestBody AuthRequestDTO requestDTO) throws Exception {
         try{
             authenticationManager.authenticate(

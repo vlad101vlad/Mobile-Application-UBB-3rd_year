@@ -16,14 +16,14 @@
           </ion-item>
           <ion-item>
             <ion-input placeholder="Password" name="password" id="passwordField"
-                       ></ion-input>
+                       #pass></ion-input>
           </ion-item>
         </ion-list>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-button expand="block">Login</ion-button>
+        <ion-button (click)="login(email.value, pass.value)" expand="block">Login</ion-button>
         <ion-button (click)="goToRegister()" expand="block">Register</ion-button>
       </ion-col>
     </ion-row>

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {Contest} from '../shared/model/contest';
 import {Observable} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {AuthCookie} from "../shared/model/auth_cookie";
 
 @Injectable({
   providedIn: 'root'
@@ -13,14 +14,17 @@ export class ContestServiceService {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
     'Access-Control-Allow-Headers': '*',
-    'Access-Control-Allow-Origin': '*'
+    'Access-Control-Allow-Origin': '*',
   };
 
   private requestOptions = {
     headers: new HttpHeaders(this.headerDict),
+    withCredentials: true
   };
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient,
+              private authCookie: AuthCookie) { }
+
 
   getContests(): Observable<Contest[]> {
     return this.httpClient.get<Contest[]>(this.backendUrl + '/', this.requestOptions);
