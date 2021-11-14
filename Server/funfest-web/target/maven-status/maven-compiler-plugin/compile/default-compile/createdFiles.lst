@@ -1,3 +1,5 @@
 ro\ubb\cluj\controller\ContestController.class
 ro\ubb\cluj\controller\HelloWorldController.class
 ro\ubb\cluj\controller\TestService.class
+ro\ubb\cluj\controller\AuthentificationController.class
+dto\AuthRequestDTO.class
