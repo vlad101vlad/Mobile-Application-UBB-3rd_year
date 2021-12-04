@@ -12,6 +12,7 @@ export class MasterViewComponent implements OnInit {
   public listOfContests: Contest[];
   public saveContestMode = false;
   public currentPage = 1;
+  public searchString = '';
 
   constructor(private contestService: ContestServiceService) { }
 
@@ -19,7 +20,7 @@ export class MasterViewComponent implements OnInit {
     this.fetchData();
   }
 
-  fetchData(): void {
+   fetchData(): void {
     this.contestService.getContests().subscribe(contestList => {
       this.listOfContests = contestList;
     });
@@ -34,5 +35,27 @@ export class MasterViewComponent implements OnInit {
 
   changeSaveContestModeStatus(){
     this.saveContestMode = !this.saveContestMode;
+  }
+
+  setSearchString(ionInput: string){
+    this.searchString = ionInput;
+    console.log('Search: ' + this.searchString);
+  }
+
+  filterBy(substring: string, contest: Contest): boolean{
+    const contestName = contest.title.toLowerCase();
+    const result =  contestName.includes(substring);
+    return result;
+  }
+
+  filterContests(substring: string): Contest[]{
+    const toBeShown: Contest[] = [];
+    console.log(this.listOfContests);
+    this.listOfContests.forEach(contest => {
+      if(this.filterBy(substring, contest)){
+        toBeShown.push(contest);
+      }
+    });
+    return toBeShown;
   }
 }

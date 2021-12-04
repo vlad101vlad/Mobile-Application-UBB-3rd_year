@@ -29,9 +29,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f45e37d2-7148-4cc3-bdc3-f2e97eb8edf5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/ionic-application/src/app/master-view/master-view.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
