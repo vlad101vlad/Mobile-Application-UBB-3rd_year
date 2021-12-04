@@ -27,7 +27,9 @@
     "@capacitor/status-bar": "1.0.3",
     "@capacitor/storage": "^1.2.3",
     "@ionic/angular": "^5.5.2",
+    "ngx": "^2.4.0",
     "ngx-cookie-service": "^13.0.0",
+    "ngx-pagination": "^5.1.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"

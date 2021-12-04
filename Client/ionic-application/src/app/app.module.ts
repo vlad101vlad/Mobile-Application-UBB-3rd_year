@@ -17,17 +17,17 @@ import {AddContestComponent} from './shared/add-contest/add-contest.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 import {AuthInterceptor} from './service/interceptor/AuthInterceptor';
-import {AuthGuard} from "./service/guard/auth.guard";
-import {AutoLoginGuard} from "./service/guard/auto-login.guard";
-
+import {AuthGuard} from './service/guard/auth.guard';
+import {AutoLoginGuard} from './service/guard/auto-login.guard';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [AppComponent, MasterViewComponent,
     HeaderComponent, DetailComponent, DetailTabsComponent,
     DetailCardComponent, AddContestComponent, LoginComponent, RegisterComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, NgxPaginationModule],
+  providers: [{ provide : RouteReuseStrategy, useClass: IonicRouteStrategy },
     ContestServiceService, AutoLoginGuard, AuthGuard, AlertController,
     {
       provide: HTTP_INTERCEPTORS,

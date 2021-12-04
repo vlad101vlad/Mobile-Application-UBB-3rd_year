@@ -1,6 +1,8 @@
-<ng-container *ngFor="let contest of listOfContests">
+<ng-container *ngFor="let contest of listOfContests | paginate: {itemsPerPage: 2, currentPage: currentPage}">
   <funfest-detail-item [contestDetail]="contest"></funfest-detail-item>
 </ng-container>
+<pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
+
 
 <ng-container *ngIf="saveContestMode">
   <app-add-contest

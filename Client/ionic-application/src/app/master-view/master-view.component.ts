@@ -11,6 +11,7 @@ import {Contest} from '../shared/model/contest';
 export class MasterViewComponent implements OnInit {
   public listOfContests: Contest[];
   public saveContestMode = false;
+  public currentPage = 1;
 
   constructor(private contestService: ContestServiceService) { }
 
