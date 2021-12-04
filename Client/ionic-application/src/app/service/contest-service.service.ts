@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import {Contest} from '../shared/model/contest';
 import {Observable} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {AuthCookie} from "../shared/model/auth_cookie";
 
 @Injectable({
   providedIn: 'root'
@@ -22,8 +21,7 @@ export class ContestServiceService {
     withCredentials: true
   };
 
-  constructor(private httpClient: HttpClient,
-              private authCookie: AuthCookie) { }
+  constructor(private httpClient: HttpClient) { }
 
 
   getContests(): Observable<Contest[]> {
