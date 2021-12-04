@@ -1,5 +1,10 @@
-<ng-container *ngFor="let contest of listOfContests | paginate: {itemsPerPage: 2, currentPage: currentPage}">
-  <funfest-detail-item [contestDetail]="contest"></funfest-detail-item>
+<ion-toolbar>
+  <ion-searchbar (ionInput)="setSearchString($event.target.value.toLowerCase())"></ion-searchbar>
+</ion-toolbar>
+<ng-container *ngFor="let contest of filterContests(searchString) | paginate: {itemsPerPage: 2, currentPage: currentPage}">
+  <ng-container *ngIf="filterBy(searchString, contest)">
+    <funfest-detail-item [contestDetail]="contest"></funfest-detail-item>
+  </ng-container>
 </ng-container>
 <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
 
