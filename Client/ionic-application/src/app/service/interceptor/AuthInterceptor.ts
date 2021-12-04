@@ -1,30 +1,36 @@
-import {Injectable} from "@angular/core";
-import {HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from "@angular/common/http";
-import {Observable} from "rxjs";
-import {AuthCookie} from "../../shared/model/auth_cookie";
+import {Injectable} from '@angular/core';
+import {HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from '@angular/common/http';
+import {from, Observable} from 'rxjs';
+import {AuthCookie} from '../../shared/model/auth_cookie';
+import {Storage} from '@capacitor/storage';
+import {TOKEN_KEY} from '../auth.service';
 
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
 
-  constructor(private cookieManager: AuthCookie) {
+  constructor() {
 
   }
 
 
   intercept(req: HttpRequest<any>,
             next: HttpHandler): Observable<HttpEvent<any>> {
+    return from(this.handleIntercept(req, next));
+  }
 
-    const idToken = this.cookieManager.getAuth();
-    debugger;
-    if (idToken) {
+  async handleIntercept(req: HttpRequest<any>,
+                        next: HttpHandler){
+    const idToken = await Storage.get({key: TOKEN_KEY});
+
+    if (idToken && idToken.value) {
       const cloned = req.clone({
-        headers: req.headers.set("Authorization",
-          "Bearer " + idToken)
+        headers: req.headers.set('Authorization',
+          'Bearer ' + idToken.value)
       });
-      return next.handle(cloned);
+      return next.handle(cloned).toPromise();
     }
     else {
-      return next.handle(req);
+      return next.handle(req).toPromise();
     }
   }
 }

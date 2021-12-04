@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router, RouterLinkActive} from '@angular/router';
 import {AuthCookie} from "../shared/model/auth_cookie";
 import {AuthService} from "../service/auth.service";
-import {JwtToken} from "../shared/model/jwtToken";
+import {async} from "rxjs";
+import {AlertController} from "@ionic/angular";
 
 @Component({
   selector: 'funfest-login',
@@ -14,7 +15,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private router: Router,
     private authCookieBuilder: AuthCookie,
-    private loginService: AuthService
+    private loginService: AuthService,
+    private alertController: AlertController
   ) {
   }
 
@@ -24,15 +26,20 @@ export class LoginComponent implements OnInit {
     this.router.navigateByUrl('/register').then(r => console.log("navigated"));
   }
 
-  login(username: string,password: string): void{
+  async login(username: string,password: string){
     console.log('Before sending to server');
     console.log(username, password);
 
     this.loginService.loginUser(username, password).subscribe(
-      jwtToken => {
-        console.log(jwtToken);
-        this.authCookieBuilder.setAuth(jwtToken["jwtToken"]);
-        console.log(this.authCookieBuilder.getAuth());
+      async (response) => {
+        this.router.navigateByUrl('/home', {replaceUrl: true});
+      },
+      async (errorResponse) => {
+        const alert = await this.alertController.create({
+          header: 'Login failed',
+          message: errorResponse.error.error,
+          buttons: ['OK'],
+        });
       }
     );
   }
