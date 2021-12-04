@@ -57,9 +57,14 @@ export class AuthService {
     ).pipe(
       map((loginResponse: JwtToken) => loginResponse.jwtToken),
       switchMap(
-        token => from(Storage.set({key: TOKEN_KEY, value: token}))
+        token => {
+          console.log('Token from server: ' + token);
+          return from(Storage.set({key: TOKEN_KEY, value: token}));
+        }
       ),
-      tap(_ => {this.isAuthenticated.next(true);})
+      tap(_ => {
+        this.isAuthenticated.next(true);
+      })
     );
   }
 
