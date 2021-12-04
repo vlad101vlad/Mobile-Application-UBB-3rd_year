@@ -1,5 +1,8 @@
-ro\ubb\cluj\domain\ContestJPA.class
-ro\ubb\cluj\repository\ContestRepository.class
+ro\ubb\cluj\domain\UserJPA.class
+ro\ubb\cluj\repository\ContestJPARepository.class
 ro\ubb\cluj\service\ContestService.class
-ro\ubb\cluj\service\impl\ContestServiceImpl.class
-ro\ubb\cluj\domain\Contest.class
+ro\ubb\cluj\service\impl\ContestServiceJPAImpl.class
+ro\ubb\cluj\service\impl\UserServiceImpl.class
+ro\ubb\cluj\domain\ContestJPA.class
+ro\ubb\cluj\service\UserService.class
+ro\ubb\cluj\repository\UserJPARepository.class

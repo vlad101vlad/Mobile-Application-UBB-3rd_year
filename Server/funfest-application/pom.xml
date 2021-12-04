@@ -23,6 +23,9 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- Thanks for using https://jar-download.com -->
+
+
 
         <dependency>
             <groupId>ro.ubb.cluj</groupId>

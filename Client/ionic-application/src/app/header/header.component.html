@@ -1,7 +1,7 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-navbar [style.color]="connected ? 'primary' : 'danger'">
     <ion-title>
-      Blank
+      FUNFEST is {{connected? 'online' : 'offline'}}
     </ion-title>
-  </ion-toolbar>
+  </ion-navbar>
 </ion-header>

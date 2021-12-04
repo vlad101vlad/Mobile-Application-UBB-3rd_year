@@ -6,4 +6,5 @@ import ro.ubb.cluj.domain.UserJPA;
 
 @Repository
 public interface UserJPARepository extends JpaRepository<UserJPA, Long> {
+    UserJPA findByUsername(String username);
 }
