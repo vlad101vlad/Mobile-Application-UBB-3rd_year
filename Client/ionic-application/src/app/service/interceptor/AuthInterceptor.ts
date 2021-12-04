@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from '@angular/common/http';
 import {from, Observable} from 'rxjs';
-import {AuthCookie} from '../../shared/model/auth_cookie';
 import {Storage} from '@capacitor/storage';
 import {TOKEN_KEY} from '../auth.service';
 
