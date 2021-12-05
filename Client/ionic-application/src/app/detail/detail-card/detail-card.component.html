@@ -7,4 +7,15 @@
   <ion-card-content>
     {{contest.description}}
   </ion-card-content>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-img [src]="image.data"></ion-img>
+    </ion-thumbnail>
+  </ion-item>
+
+  <ion-button fill="clear" expand="full" color="dark" (click)="selectImage()">
+    <ion-icon slot="start" name="camera"></ion-icon>
+    Select image
+  </ion-button>
 </ion-card>
