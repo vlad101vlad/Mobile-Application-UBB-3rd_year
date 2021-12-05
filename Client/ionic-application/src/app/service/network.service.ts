@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {PluginListenerHandle} from '@capacitor/core';
-import {ConnectionStatus, Network, NetworkStatus} from '@capacitor/network';
+import {ConnectionStatus, Network} from '@capacitor/network';
 import {BehaviorSubject, Observable} from 'rxjs';
 
 @Injectable({
@@ -8,7 +8,7 @@ import {BehaviorSubject, Observable} from 'rxjs';
 })
 export class NetworkService {
   private handler: PluginListenerHandle;
-  private status = new BehaviorSubject<NetworkStatus>(null);
+  private status = new BehaviorSubject<ConnectionStatus>(null);
 
 
   constructor() {
