@@ -14,23 +14,28 @@ export class MasterViewComponent implements OnInit {
   public currentPage = 1;
   public searchString = '';
 
+
   constructor(private contestService: ContestServiceService) { }
 
   ngOnInit() {
     this.fetchData();
+    this.contestService.refreshContest.subscribe( _ => {
+      console.log('before refreshContest()');
+      this.fetchData();
+      console.log('after refreshContest()');
+    });
   }
 
    fetchData(): void {
     this.contestService.getContests().subscribe(contestList => {
       this.listOfContests = contestList;
+      console.log(contestList);
     });
   }
 
   saveContest(contest: Contest): void{
-    console.log(contest);
-    this.contestService.addContest(contest).subscribe(
-      newContest => this.listOfContests.push(newContest)
-    );
+    this.contestService.addContest(contest)
+      .subscribe(_ => this.contestService.refreshContest.next(true));
   }
 
   changeSaveContestModeStatus(){
@@ -50,7 +55,6 @@ export class MasterViewComponent implements OnInit {
 
   filterContests(substring: string): Contest[]{
     const toBeShown: Contest[] = [];
-    console.log(this.listOfContests);
     this.listOfContests.forEach(contest => {
       if(this.filterBy(substring, contest)){
         toBeShown.push(contest);

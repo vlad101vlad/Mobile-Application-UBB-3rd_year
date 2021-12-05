@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import {Contest} from '../shared/model/contest';
-import {Observable} from 'rxjs';
+import {BehaviorSubject, Observable} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContestServiceService {
+  public refreshContest = new BehaviorSubject<boolean>(true);
 
   private backendUrl = 'http://localhost:8443/contest';
   private headerDict = {
@@ -21,6 +22,7 @@ export class ContestServiceService {
     withCredentials: true
   };
 
+
   constructor(private httpClient: HttpClient) { }
 
 
@@ -34,5 +36,8 @@ export class ContestServiceService {
     );
   }
 
+  deleteContest(idToDelete: number): Observable<any> {
+    return this.httpClient.delete(this.backendUrl + '/' + idToDelete, this.requestOptions);
+  }
 
 }

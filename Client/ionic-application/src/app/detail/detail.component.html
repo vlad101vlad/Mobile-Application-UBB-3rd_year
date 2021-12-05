@@ -9,4 +9,8 @@
 <ng-container *ngIf="isExpanded">
   <funfest-detail-tabs></funfest-detail-tabs>
   <funfest-detail-card [contest]="contestDetail"></funfest-detail-card>
+
+  <section class="full-width">
+    <ion-button (click)="deleteContest()" expand="block" color="secondary">DELETE CONTEST</ion-button>
+  </section>
 </ng-container>

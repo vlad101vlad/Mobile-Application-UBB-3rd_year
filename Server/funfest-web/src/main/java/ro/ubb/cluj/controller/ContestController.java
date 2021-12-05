@@ -28,4 +28,10 @@ public class ContestController {
     ContestJPA addContest(@RequestBody ContestJPA contest){
         return contestService.save(contest);
     }
+
+    @DeleteMapping("/{id}")
+    void deleteContest(@PathVariable String id){
+        Long idToBeDeleted = Long.parseLong(id);
+        contestService.deleteById(idToBeDeleted);
+    }
 }
