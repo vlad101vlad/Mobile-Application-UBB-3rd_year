@@ -22,6 +22,12 @@ public class ContestServiceJPAImpl implements ContestService {
     }
 
     @Override
+    public void deleteById(Long contestId) {
+        this.contestJPARepository.deleteById(contestId);
+    }
+
+
+    @Override
     public List<ContestJPA> getAll() {
         return contestJPARepository.findAll();
     }
