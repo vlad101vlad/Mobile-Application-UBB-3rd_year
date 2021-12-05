@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
 import {AlertController, IonicModule, IonicRouteStrategy} from '@ionic/angular';
-
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {MasterViewComponent} from './master-view/master-view.component';
@@ -20,13 +19,17 @@ import {AuthInterceptor} from './service/interceptor/AuthInterceptor';
 import {AuthGuard} from './service/guard/auth.guard';
 import {AutoLoginGuard} from './service/guard/auto-login.guard';
 import {NgxPaginationModule} from 'ngx-pagination';
+import {AgmCoreModule} from '@agm/core';
 
 @NgModule({
   declarations: [AppComponent, MasterViewComponent,
     HeaderComponent, DetailComponent, DetailTabsComponent,
     DetailCardComponent, AddContestComponent, LoginComponent, RegisterComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, NgxPaginationModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AgmCoreModule.forRoot({
+    apiKey: 'AIzaSyCu_2HJMBOVXBl9pY_yC-nKdyijbpC1Sm8'
+  }),
+    HttpClientModule, NgxPaginationModule],
   providers: [{ provide : RouteReuseStrategy, useClass: IonicRouteStrategy },
     ContestServiceService, AutoLoginGuard, AuthGuard, AlertController,
     {

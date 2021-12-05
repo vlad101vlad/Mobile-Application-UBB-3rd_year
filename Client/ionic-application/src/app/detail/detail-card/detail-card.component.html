@@ -18,4 +18,8 @@
     <ion-icon slot="start" name="camera"></ion-icon>
     Select image
   </ion-button>
+
+  <agm-map [latitude]="mapLatitude" [longitude]="mapLongituted" (mapClick)="onClickLocation($event)">
+    <agm-marker [latitude]="selectorLatitude" [longitude]="selectorLongitude"></agm-marker>
+  </agm-map>
 </ion-card>

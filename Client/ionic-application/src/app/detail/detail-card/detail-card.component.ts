@@ -1,9 +1,10 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Contest} from '../../shared/model/contest';
 import {Camera} from '@capacitor/camera/dist/esm/web';
-import {CameraResultType, CameraSource, Photo} from "@capacitor/camera";
-import {Directory, Filesystem} from "@capacitor/filesystem";
-import {LoadingController, Platform} from "@ionic/angular";
+import {CameraResultType, CameraSource, Photo} from '@capacitor/camera';
+import {Directory, Filesystem} from '@capacitor/filesystem';
+import {LoadingController, Platform} from '@ionic/angular';
+import {AgmCoreModule} from '@agm/core';
 
 
 // import {Camera} from "@capacitor/camera";
@@ -24,10 +25,28 @@ interface LocalFile{
 export class DetailCardComponent implements OnInit {
   @Input() contest: Contest;
   image: LocalFile;
-  constructor(private platform: Platform, private loadingController: LoadingController) { }
+
+  mapLatitude = 46.7667;
+  mapLongituted = 23.6;
+
+  selectorLongitude = 23.6;
+  selectorLatitude = 46.7667;
+  private mapClickListener: google.maps.MapsEventListener;
+  private zone: any;
+
+  constructor(
+    private platform: Platform,
+    private loadingController: LoadingController)
+  { }
+
 
   ngOnInit() {
     this.loadFile();
+  }
+
+  onClickLocation(event){
+    this.selectorLongitude = event.coords.lng;
+    this.selectorLatitude = event.coords.lat;
   }
 
   async loadFile(){
@@ -56,7 +75,7 @@ export class DetailCardComponent implements OnInit {
   async loadFileData(fileName: string[]){
     let filePath = '';
     let currentName = '';
-    for(let currentFile of fileName){
+    for(const currentFile of fileName){
       if(currentFile.startsWith(this.contest.id + '_')){
         currentName = currentFile;
         filePath = IMAGE_DIRECTORY + '/' + currentName;
@@ -120,7 +139,7 @@ export class DetailCardComponent implements OnInit {
   }
 
   convertBlobToBase64 = (blob: Blob) => new Promise(((resolve, reject) => {
-    const reader = new FileReader;
+    const reader = new FileReader();
     reader.onerror = reject;
     reader.onload = () => {
       resolve(reader.result);
